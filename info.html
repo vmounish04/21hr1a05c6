@@ -1,0 +1,364 @@
+*<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MOUNISH</title>
+  </head>
+
+  <body>
+
+    
+    <nav class="navigation">
+      <ul>
+        <li id="logo">MOUNISH</li>
+        <li class="nav-item">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BIO</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#" class="button">CONTACT</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    
+    <header id="home">
+      <div>
+        <h2>I BELIEVE IN</h2>
+        <h1>STUDY(); HARDWORK(); ACHIVE(); REPEAT();</h1>
+      </div>
+    </header>
+  
+    <section id="bio">
+      <img src="#" alt="photo" />
+      <article>
+        <h1>MOUNISH</h1>
+        <p>
+          MY Name is mounish i am from chittoor now i am syuding in mother theresa institute of technology and engnering
+        </p>
+        <p>
+          i prepared for exam and also i know html,cssand javascript
+        </p>
+        <p>
+          mainly my goal is to become the best software
+          
+        </p>
+        <a href="#" class="link-quiz">Download  the quzies</a>
+      </article>
+    </section>
+    <section id="profile">
+      <h2>PROFILE</h2>
+      <p>Some of my best projects so far</p>
+      <hr />
+      <div>
+        <article>
+          <img
+            class="profile-icon"
+            src="#"
+            alt="profile-icon"
+          />
+          <h3> ACHIVEMENTS</h3>
+          <p>I got 1nd price in kuppam for front end quiz</p>
+        </article>
+        <article>
+          <img
+            class="profile-icon"
+            src="#"
+            alt="profile-icon"
+          />
+          <h3>kuppam</h3>
+          <p>I got again first price in kuppam for techincal quiz</p>
+        </article>
+        <article>
+          <img
+            class="profile-icon"
+            src="#"
+            alt="profile-icon"
+          />
+          <h3>TEXT TO SPEECH CONVENSION</h3>
+          <p> I am created a project which converts text to speech</p>
+        </article>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>SKILLS</h2>
+      <div class="skill-container">
+        <div>
+          <h3>TECHNICAL SKILLS</h3>
+          <ul>
+            <li>HTML</li>
+            <li><progress value="70" max="100"></progress></li>
+            <li>CSS</li>
+            <li><progress value="40" max="100"></progress></li>
+            <li>JAVA</li>
+            <li><progress value="10" max="100"></progress></li>
+            <li>PYTHON</li>
+            <li><progress value="50" max="100"></progress></li>
+            <li>C</li>
+            <li><progress value="90" max="100"></progress></li>
+          </ul>
+        </div>
+        <div>
+          <h3>LANGUAGES</h3>
+          <ul>
+            <li>ENGLISH</li>
+            <li><progress value="30" max="100"></progress></li>
+            <li>TELUGU</li>
+            <li><progress value="50" max="100"></progress></li>
+            <li>HINDI</li>
+            <li><progress value="70" max="100"></progress></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <h2>CONTACT</h2>
+      <form action="">
+        <input class="input" type="text" placeholder="ENTER YOUR NAME" />
+        <input class="input" type="text" placeholder="ENTER YOUR EMAIL" />
+        <input type="text" class="input" placeholder="ENTER YOUR MESSAGE" />
+        <input type="submit" value="Send Message" class="link-button" />
+      </form>
+    </footer>
+      <style>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10px;
+    background: #EDEEF0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo {
+    font-size: 3em;
+    font-weight: 700;
+    color: #391ed2;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.nav-item ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    font-size: 1.8em;
+    text-decoration: none;
+    color: rgb(226, 218, 218);
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-item a:hover {
+    color: #330e8a;
+}
+
+#home {
+    background-color: black;
+    color: white;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home h2 {
+    font-weight: 200;
+    letter-spacing: .5px;
+}
+
+#bio {
+    display: flex;
+    align-items: center;
+
+}
+
+#bio h1 {
+    letter-spacing: 0.5px;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+#bio img {
+ 
+    width: 250px;
+    height: 250px;
+  
+    border-radius: 50%;
+    margin: 100px;
+
+}
+
+#bio article {
+    margin: 10px;
+}
+
+#bio article p {
+    padding: 20px 0;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.link-quiz{
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: #0841d1 !important;
+    color: rgb(228, 123, 123) !important;
+    font-size: 1.8em;
+    border-radius: 5%;
+    cursor: pointer;
+    border-color: black;
+    padding: 10px;
+    font-weight: 100;
+}
+
+#profile {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#profile hr {
+
+    width: 400px;
+    margin: 20px auto;
+}
+
+#profile div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 50px;
+}
+
+#profile div article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+}
+
+
+
+#profile>* {
+    margin-top: 20px;
+}
+
+#profile>p {
+    font-weight: 100;
+}
+
+#profile div article p,
+h3,
+img {
+    text-align: center;
+    padding: 20px 5px 0 5px;
+}
+
+.profile-icon {
+    font-size: 3em;
+    color: #0a953f
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#skills ul {
+    list-style: none;
+    font-size: 1.5em;
+}
+
+#skills ul li {
+    margin: 10px 0;
+    ;
+}
+
+progress[value] {
+    height: 10px;
+    width: 350px;
+    -webkit-appearance: none;
+}
+
+
+
+progress[value]::-webkit-progress-bar {
+    background-color: grey;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+::-webkit-progress-value {
+    background-color: #3816e1;
+}
+
+#contact {
+    background-color: rgb(134, 137, 131);
+    color: white;
+}
+
+.input {
+    line-height: 2em;
+    width: 350px;
+    border-radius: 3px;
+    border-color: black;
+}
+        </style>
+
+     
+  </body>
+
+</html>
