@@ -1,41 +1,35 @@
-class First1 implements Runnable
-{
-Thread t;
-First1()
-{
-t=new Thread(this,"NEW");
-System.out.println("CHILD:"+t);;
-t.start();
-}
-public void run(){
-try{
-    for(int i=5;i>0;i--)
+class ChildThread extends Thread{
+    public void run()
     {
-System.out.println("CHILD:"+i);
-Thread.sleep(500);
-}
+        for(int i=1;i<=4;i++)
+        {
+            try{
+                Thread.sleep(500);
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
+
+            System.out.println("Children Thread execution -"+i);
+        }
+    }
 }
 
-catch(InterruptedException e){}
-System.out.println("EXITING CHILD");
-}
+public class ThreadSleep{
 
+    public static void main(String[] args) throws Exception
+    {
+        ChildThread th1 = new ChildThread();
+        // starting the child Thread
+        th1.start();
+        //main thread joining the child Thread
+        th1.join();
+        //main thread printing statements 
 
-}
+        System.out.println("Main Thread Completed");
 
-class ThreadSleep{
-public static void main(String args[])
-{
-new First1();
-try{
-for(int i=5;i>0;i--)
-{
-System.out.println("MAIN:"+i);
-Thread.sleep(1000);
-}
-}
-catch(Exception e){}
-System.out.println("EXISTING main");
+    }
 
-}
+    
 }
